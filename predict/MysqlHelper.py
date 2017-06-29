@@ -3,7 +3,6 @@ from sqlalchemy import create_engine, func, and_
 from sqlalchemy.orm import sessionmaker
 from Model import MovieModel
 
-
 def getData():
     engine = create_engine('mysql+mysqlconnector://test:chen123@localhost:3306/movie_imdb')
     Session = sessionmaker(bind = engine)
